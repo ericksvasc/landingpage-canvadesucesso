@@ -1,65 +1,72 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Styles from '../styles/Home.module.css';
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className={Styles.Container}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Canva De Sucesso</title>
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <main className={Styles.Main}>
+        <div className={Styles.LogoProduct} >
+          <Image src='/logo-cds.png' width='230px' height='230px' />
+        </div>
+        <div className={Styles.DescriptionProduct}>
+          <p>Inscrições abertas para o Canva De Sucesso:</p>
+          <p>Destaque-se para seu público com publicações mais atraentes e profissionais</p>
+        </div>
+        <div className={Styles.DescriptionVideo}>
+          <p>Assista ao vídeo e entenda tudo que será aprendido.</p>
+          <div></div>
+        </div>
+        <div className={Styles.DescriptionPayButton}>
+          <a href="#">Sim, Eu quero me destacar!!</a>
+          <p>De <span>R$197,00</span> por <span>R$97,90</span></p>
+          <p>Em até 12x no cartão ou 10% de desconto no boleto</p>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      <div className={Styles.AboutMe}>
+        <div className={Styles.AboutMeContent}>
+          <h2>Sobre o professor</h2>
+          <div className={Styles.AboutMeDescription}>
+            <div className={Styles.AboutMeText}>
+              <p><span>Erick Vasconcelos</span> é um jovem empreendedor que aprendeu Design totalmente sozinho. Aos 16 anos ele começou a buscar conhecimento sobre a área e de pouco em pouco foi aperfeiçoando suas técnicas. Hoje ele criou o "Canva de Sucesso", um treinamento onde você vai aprender como criar designs profissionais para sua empresa ou negócio, designs que se destacam aonde são vistos, e assim, aumentar a visibilidade da sua empresa ou negócio.</p>
+            </div>
+            <div className={Styles.Image}>
+              <Image src='/author.png' width='470' height='470' />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={Styles.SatisfiedStudents}>
+        <p>Alunos Satisfeitos!</p>
+        <p>Depoimentos de quem fez o curso</p>
+        <div className={Styles.SatisfiedImages}>
+          <div className={Styles.Sat1}>
+            <div>
+              <Image className={Styles.Tes} src='/Sat1.png' width='324' height='230' />
+            </div>
+            <div>
+              <Image src='/Sat2.png' width='324' height='230' />
+            </div>
+            <div>
+              <Image src='/Sat3.png' width='324' height='230' />
+            </div>
+          </div>
+          <div className={Styles.Sat2}>
+            <div>
+              <Image src='/Sat4.png' width='324' height='230' />
+            </div>
+            <div>
+              <Image src='/Sat5.png' width='324' height='230' />
+            </div>
+            <div>
+              <Image src='/Sat6.png' width='324' height='230' />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

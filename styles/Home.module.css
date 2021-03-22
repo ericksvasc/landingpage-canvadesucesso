@@ -1,122 +1,185 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
+.Main{
+  max-width: 1000px;
   width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* background: red; */
+  height: 100%;
+}
+.Main .LogoProduct{
+  margin-top: 40px;
+}
+.Container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+  
+}
+.DescriptionProduct{
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
-
-.footer img {
-  margin-left: 0.5rem;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+.DescriptionProduct p{
+  margin: 0 0 24px 0;
   text-align: center;
 }
 
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
+.DescriptionProduct p:last-child{
+  color: var(--color-secondary);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.3rem;
+}
+.DescriptionProduct > p:first-child{
+  color: var(--color-text);
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.3rem;
+  
+}
+.DescriptionVideo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.DescriptionVideo p {
+  color: var(--color-text);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+.DescriptionVideo div{
+  width: 622px;
+  height: 350px;
+  background: #05142C;
+}
+.DescriptionPayButton{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.DescriptionPayButton a{
+  width: 573px;
+  height: 86px;
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+  margin: 30px 0 18px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+.DescriptionPayButton p:first-of-type{
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-text);
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+.DescriptionPayButton p:last-of-type{
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-text);
+  font-weight: 300;
+  font-size: 1.18rem;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+.DescriptionPayButton p span{
+  font-weight: 700;
+}
+.DescriptionPayButton p span:first-of-type{
+  text-decoration: line-through;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
 
-.grid {
+.AboutMe{
+  width: 100%;
+  height: 682px;
+  max-height: 682px;
+  background-color: var(--color-background-light);
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
+}
+.AboutMeContent{
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+}
+.AboutMeContent h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin: 50px 0 0 20px;
 }
 
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+.AboutMeDescription{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+.AboutMeText{
+  max-width: 456px;
+}
+.AboutMeText p {
+  font-family: 'Roboto', sans-serif;
+  max-width: 456px;
+  width: 100%;
+  font-size: 1.375rem;
+  font-weight: 400;
+  color: var(--color-primary);
+  margin-left: 20px;
+}
+.Image{
+  margin-right: 20px;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
 
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.SatisfiedStudents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.SatisfiedStudents p:first-of-type{
+  color: var(--color-secondary);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: calc(80rem/16);
+  margin-top: 80px;
 }
-
-.logo {
-  height: 1em;
+.SatisfiedStudents p:last-of-type{
+  color: var(--color-text);
+  font-family: "Roboto", sans-serif;
+  font-size: calc(30rem/16);
+  /* margin-top: 80px; */
 }
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.SatisfiedImages{
+  max-width: 1000px;
+  width: 100%;
+}
+.Sat1{
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Sat1 div + div{
+  margin: 0 0 0 15px;
+}
+.Sat2{
+  margin: 18px 0 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Sat2 div + div{
+  margin: 0 0 0 15px;
 }
